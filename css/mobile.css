@@ -87,7 +87,7 @@ header {
   text-align: left;
 }
 .no-bullets-2 {
-  visibility: hidden;
+  display: none;
 }
 .title-3 {
   visibility: hidden;
@@ -96,16 +96,16 @@ header {
   visibility: hidden;
 }
 .icon-antenna {
-  visibility: hidden;
+  display: none;
 }
 .icon-clock {
-  visibility: hidden;
+  display: none;
 }
 .icon-diagram {
-  visibility: hidden;
+  display: none;
 }
 .icon-astronaut {
-  visibility: hidden;
+  display: none;
 }
 .no-bullets {
   list-style: none;
@@ -203,9 +203,14 @@ header {
   background-color: #31d0aa;
 }
 .shadow-1 {
-  box-shadow: 0px 1px 53px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
 }
+.shadow {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+  background-color: #fffff;
+}
+
 .shadow {
   border-right: 1px;
   border-bottom: 1px;
@@ -231,4 +236,52 @@ header {
   height: 40px;
   background-color: #4d5ae5;
   display: block;
+}
+.cashless-card {
+  position: relative;
+  overflow: hidden;
+  width: 288px;
+  height: 280px;
+}
+.shadow img {
+  width: 288px;
+  height: 280px;
+  margin-left: 50px;
+}
+.no-bullets-1 h3 {
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.no-bullets-1 p {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.order-btn {
+  top: 428px;
+  left: 636px;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
+  gap: 10px;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.044em;
+}
+.content-1 h3 {
+  margin-top: 100px;
+  margin-bottom: 16px;
+}
+.back-3 h2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+.space h2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 100px;
 }
