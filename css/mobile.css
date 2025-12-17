@@ -7,6 +7,7 @@
 }
 .body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 header {
   display: flex;
@@ -22,40 +23,36 @@ header {
   height: 24px;
   cursor: pointer;
 }
-.menu-button {
+.burger {
   cursor: pointer;
   position: relative;
 }
-.mobile-nav .no-bullets-2 {
+.mobile-menu {
   position: fixed;
-  top: auto;
-  left: auto;
-  width: 100%;
-  height: 100vh;
-  background-color: #ffffff;
-  color: #2f2f42;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+  padding: 24px;
+  background-color: #f4f4fd;
+}
+.mobile-menu .title-3 {
+  font-style: normal;
+  margin-top: 48px;
+}
+.mobile-menu .title-3 a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  color: #434455;
+}
 
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  opacity: 0;
+.menu-toggle {
   display: none;
 }
-.menu-close {
-  position: absolute;
 
-  width: 8px;
-  height: 8px;
-  top: 8px;
-  left: 8px;
-  color: #2e2f42;
-  cursor: pointer;
-}
-#menu-toggle {
-  display: none;
-}
-.mobile-menu-toggle:checked ~ header .mobile-nav {
-  display: flex;
+.menu-toggle:checked ~ .mobile-menu {
+  display: block;
 }
 .back-1 {
   background-color: #2e2f42;
@@ -89,9 +86,6 @@ header {
   text-align: left;
 }
 
-.title-3 {
-  visibility: hidden;
-}
 .modal-content {
   visibility: hidden;
 }
@@ -224,18 +218,24 @@ header {
 }
 .content-4 {
   text-align: center;
+  padding-top: 100px;
+  margin-bottom: 100px;
 }
 .footer-right {
   color: #ffffff;
 }
+.footer-right p {
+  margin-top: 100px;
+}
 .subscribe {
   color: #ffffff;
+  margin-top: 100px;
 }
 .icon-icon-send {
   width: 165px;
   height: 40px;
   background-color: #4d5ae5;
-  display: flex;
+  display: flexbox;
 }
 
 .cashless-card {
@@ -285,4 +285,35 @@ header {
   margin-top: 100px;
   margin-bottom: 100px;
   padding-top: 100px;
+}
+.no-bullets-2 li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.no-bullets-2 a {
+  text-decoration: none;
+  font-size: 36px;
+  color: #2e2f42;
+}
+
+.icon-Vector-3 {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 25px;
+  color: #2e2f42;
+}
+.menu-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  background: #f4f4fd;
+  border: 1px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }

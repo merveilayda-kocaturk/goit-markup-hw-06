@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,94 +21,94 @@
       rel="stylesheet"
       href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/mobile.css"/>
- 
- 
- 
- 
- 
- 
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
   </head>
 
-
   <body class="contanier">
-    <input type="checkbox" id="mobile-menu-toggle" hidden/>
     <header class="brd">
-    
-        <div class="nvg">
-          <a href="#" class="logo top-logo">
-            <span class="web">WEB</span><span class="studio">STUDIO</span>
-          </a>
-         
-          <label for="mobile-menu-toggle" class="menu-button">
-          <svg class="icon icon-Group"><use xlink:href="./images/symbol-defs.svg#icon-Group"></use></svg>
-          </label> 
-          <div>
-            <div class="mobile-nav">
-              <label for="mobile-menu-toggle" class="menu-close"></label><svg class="icon icon-Vector-3"><use xlink:href="./images/symbol-defs.svg#icon-Vector-3"></use></svg>
-            
-            </div>
-          
-            <ul class="no-bullets-2">
-              <li><a href="studio">studio</a></li>
-              <li><a href="portfolio">portfolio</a></li>
-              <li><a href="contacts">contacts</a></li>
-            </ul>
-          </div>
-          
-        </div>
-        <address class="title-3">
-          <a href="info@devstudio.com">info@devstudio.com</a><br />
-          <a href="+11 (000) 111-11-11">+11 (000) 111-11-11</a>
-        </address>
+      <div class="nvg">
+        <a href="#" class="logo top-logo">
+          <span class="web">WEB</span><span class="studio">STUDIO</span>
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="burger">
+          <svg class="icon icon-Group">
+            <use xlink:href="./images/symbol-defs.svg#icon-Group"></use>
+          </svg>
+        </label>
+        <nav class="mobile-menu">
+          <label for="menu-toggle" class="menu-close"></label>
+          <svg class="icon icon-Vector-3">
+            <use xlink:href="./images/symbol-defs.svg#icon-Vector-3"></use>
+          </svg>
+
+          <ul class="no-bullets-2">
+            <li><a href="studio">studio</a></li>
+            <li><a href="portfolio">portfolio</a></li>
+            <li><a href="contacts">contacts</a></li>
+          </ul>
+
+          <address class="title-3">
+            <a href="info@devstudio.com">info@devstudio.com</a><br />
+            <a href="+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+          </address>
+        </nav>
       </div>
     </header>
     <div class="modal is-open">
       <div class="modal-content">
-     <div class="modal-close">
-     <svg class="icon icon-Vector-3"><use xlink:href="./images/symbol-defs.svg#icon-Vector-3"></use></svg>
-     </div>
-      <form class="contact-form">
-<p>Leave your contacts and we will call you back</p>
-        <label for="name">Name
-        <input type="text" id="name" name="name"  required>
-        <svg class="icon icon-Vector"><use xlink:href="./images/symbol-defs.svg#icon-Vector"></use></svg>
-        </label>
+        <div class="modal-close">
+          <svg class="icon icon-Vector-3">
+            <use xlink:href="./images/symbol-defs.svg#icon-Vector-3"></use>
+          </svg>
+        </div>
+        <form class="contact-form">
+          <p>Leave your contacts and we will call you back</p>
+          <label for="name"
+            >Name
+            <input type="text" id="name" name="name" required />
+            <svg class="icon icon-Vector">
+              <use xlink:href="./images/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </label>
 
-       
+          <label for="phone"
+            >Phone
+            <svg class="icon icon-Vector-1">
+              <use xlink:href="./images/symbol-defs.svg#icon-Vector-1"></use>
+            </svg>
+            <input type="number" id="phone" name="phone" required />
+          </label>
 
-        <label for="phone">Phone
-        <svg class="icon icon-Vector-1"><use xlink:href="./images/symbol-defs.svg#icon-Vector-1"></use></svg>
-        <input type="number" id="phone" name="phone"  required>
-        </label>
+          <label for="email"
+            >Email
+            <svg class="icon icon-Vector-2">
+              <use xlink:href="./images/symbol-defs.svg#icon-Vector-2"></use>
+            </svg>
+            <input type="email" id="email" name="email" required />
+          </label>
 
-        <label for="email">Email
-        <svg class="icon icon-Vector-2"><use xlink:href="./images/symbol-defs.svg#icon-Vector-2"></use></svg>
-        <input type="email" id="email" name="email"  required>
-        </label>
-
-        <label for="comment">Comment</label>
-        <textarea id="comment" name="comment" placeholder="Text input" required></textarea>
+          <label for="comment">Comment</label>
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Text input"
+            required
+          ></textarea>
 
           <div class="checkbox">
-         <input type="checkbox" id="terms" required>
-         <label for="terms">
-          I accept the terms and conditions of the 
-          <a href="#">Privacy Policy</a>
-        </label>
-        </div>
-        <button type="submit">Send </button>
-      </form>
+            <input type="checkbox" id="terms" required />
+            <label for="terms">
+              I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
-    </div>
 
-
-
-
-     
-
-    
     <main>
       <section class="back-1 section">
         <h1 class="title-1">
@@ -121,7 +120,9 @@
       <section class="content-1 section">
         <ul class="no-bullets">
           <li>
-            <svg class="icon icon-antenna"><use xlink:href="./images/symbol-defs.svg#icon-antenna"></use></svg>
+            <svg class="icon icon-antenna">
+              <use xlink:href="./images/symbol-defs.svg#icon-antenna"></use>
+            </svg>
             <h3 c>Strategy</h3>
             <p>
               Our goal is to identify the business problem to walk away with the
@@ -129,7 +130,9 @@
             </p>
           </li>
           <li>
-            <svg class="icon icon-clock"><use xlink:href="./images/symbol-defs.svg#icon-clock"></use></svg>
+            <svg class="icon icon-clock">
+              <use xlink:href="./images/symbol-defs.svg#icon-clock"></use>
+            </svg>
             <h3>Punctuality</h3>
             <p>
               Bring the key message to the brand's audience for the best price
@@ -137,7 +140,9 @@
             </p>
           </li>
           <li>
-            <svg class="icon icon-diagram"><use xlink:href="./images/symbol-defs.svg#icon-diagram"></use></svg>
+            <svg class="icon icon-diagram">
+              <use xlink:href="./images/symbol-defs.svg#icon-diagram"></use>
+            </svg>
             <h3>Diligence</h3>
             <p>
               Research and confirm brands with the strongest digital growth
@@ -145,7 +150,9 @@
             </p>
           </li>
           <li>
-            <svg class="icon icon-astronaut"><use xlink:href="./images/symbol-defs.svg#icon-astronaut"></use></svg>
+            <svg class="icon icon-astronaut">
+              <use xlink:href="./images/symbol-defs.svg#icon-astronaut"></use>
+            </svg>
             <h3>Technologies</h3>
             <p>
               Design practice focused on digital experience.We bring forth a
@@ -168,36 +175,47 @@
               />
               <h3>Mark Guerrero</h3>
               <p>Product Designer</p>
-                <ul class="social-links">
-                  <li class="social-media">
-                    <a href="#">
-                    <svg class="icon icon-instagram"><use xlink:href="./images/symbol-defs.svg#icon-instagram"></use>
+              <ul class="social-links">
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-instagram">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-instagram"
+                      ></use>
                     </svg>
-                    </a>
-                  </li>
-               <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-twitter"><use xlink:href="./images/symbol-defs.svg#icon-twitter"></use></svg>
-                </a>
-              </li>
-              <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-facebook"><use xlink:href="./images/symbol-defs.svg#icon-facebook"></use></svg>
-                </a>
-              </li>
-              <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-linkedin"><use xlink:href="./images/symbol-defs.svg#icon-linkedin"></use></svg>
-                </a>
-              </li>
-                </ul>
-              
-
-                
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-twitter">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-facebook">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-linkedin">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="shadow-1">
               <img
-
                 src="images/img2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -206,31 +224,45 @@
               <h3>Tom Ford</h3>
               <p>Frontend Developer</p>
               <ul class="social-links">
-                  <li class="social-media">
-                    <a href="#">
-                    <svg class="icon icon-instagram"><use xlink:href="./images/symbol-defs.svg#icon-instagram"></use></svg>
-                    </a>
-                  </li>
-               <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-twitter"><use xlink:href="./images/symbol-defs.svg#icon-twitter"></use></svg>
-                </a>
-              </li>
-              <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-facebook"><use xlink:href="./images/symbol-defs.svg#icon-facebook"></use></svg>
-                </a>
-              </li>
-              <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-linkedin"><use xlink:href="./images/symbol-defs.svg#icon-linkedin"></use></svg>
-                </a>
-              </li>
-                </ul>
-              
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-instagram">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-twitter">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-facebook">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-linkedin">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li class="shadow-1" >
-            
+            <li class="shadow-1">
               <img
                 src="images/img3.jpg"
                 alt="Camilla Garcia"
@@ -240,28 +272,43 @@
               <h3>Camilla Garcia</h3>
               <p>Marketing</p>
               <ul class="social-links">
-                  <li class="social-media">
-                    <a href="#">
-                    <svg class="icon icon-instagram"><use xlink:href="./images/symbol-defs.svg#icon-instagram"></use></svg>
-                    </a>
-                  </li>
-               <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-twitter"><use xlink:href="./images/symbol-defs.svg#icon-twitter"></use></svg>
-                </a>
-              </li>
-              <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-facebook"><use xlink:href="./images/symbol-defs.svg#icon-facebook"></use></svg>
-                </a>
-              </li>
-              <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-linkedin"><use xlink:href="./images/symbol-defs.svg#icon-linkedin"></use></svg>
-                </a>
-              </li>
-                </ul>
-               
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-instagram">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-twitter">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-facebook">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-linkedin">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="shadow-1">
               <img
@@ -273,173 +320,199 @@
               <h3>Daniel Wilson</h3>
               <p>UI Designer</p>
               <ul class="social-links">
-                  <li class="social-media">
-                    <a href="#">
-                    <svg class="icon icon-instagram"><use xlink:href="./images/symbol-defs.svg#icon-instagram"></use></svg>
-                    </a>
-                  </li>
-               <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-twitter"><use xlink:href="./images/symbol-defs.svg#icon-twitter"></use></svg>
-                </a>
-              </li>
-              <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-facebook"><use xlink:href="./images/symbol-defs.svg#icon-facebook"></use></svg>
-                </a>
-              </li>
-              <li class="social-media" >
-                <a href="#">
-                <svg class="icon icon-linkedin"><use xlink:href="./images/symbol-defs.svg#icon-linkedin"></use></svg>
-                </a>
-              </li>
-                </ul>
-              
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-instagram">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-twitter">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-facebook">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media">
+                  <a href="#">
+                    <svg class="icon icon-linkedin">
+                      <use
+                        xlink:href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="part-2 section">
-        <div class="space"|>
-        <h2 class="content-3">Our Portfolio</h2>
-        <ul class="no-bullets-1">
-          <li class="shadow">
-            <img
-              src="images/img5.jpg"
-              alt="Banking App"
-              width="360"
-              height="300"
-            />
-            <h3>Banking App</h3>
-            <p class="thumb">App</p>
-          </li>
-          <li class="shadow">
-           <div class="cashless-card">
-            <img
-              src="images/img6.jpg"
-              alt="Cashless Payment"
-              class="normal-img"
-              width="360"
-              height="300"
-            />
-            <img
-              src="images/img15.jpg"
-              alt="Cashless hover"
-              class="hover-img"
-              width="360"
-              height="300"
+        <div class="space" |>
+          <h2 class="content-3">Our Portfolio</h2>
+          <ul class="no-bullets-1">
+            <li class="shadow">
+              <img
+                src="images/img5.jpg"
+                alt="Banking App"
+                width="360"
+                height="300"
               />
-              <div class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</div>
-           </div>
-            
-              
-            
-            <h3 >Cashless Payment</h3>
-            <p>Marketing</p>
-          </li>
-          <li class="shadow" >
-            <img
-              src="images/img7.jpg"
-              alt="Meditation App"
-              width="360"
-              height="300"
-            />
-            <h3>Meditation App</h3>
-            <p>App</p>
-          </li>
-          <li class="shadow">
-            <img
-              src="images/img8.jpg"
-              alt="Taxi Service"
-              width="360"
-              height="300"
-            />
-            <h3>Taxi Service</h3>
-            <p>Marketing</p>
-          </li>
-          <li class="shadow">
-            <img
-              src="images/img9.jpg"
-              alt="Screen Illustrations"
-              width="360"
-              height="300"
-            />
-            <h3>Screen Illustrations</h3>
-            <p>Design</p>
-          </li>
-          <li class="shadow">
-            <img
-              src="images/img12.jpg"
-              alt="Online Courses"
-              width="360"
-              height="300"
-            />
-            <h3>Online Courses</h3>
-            <p>Marketing</p>
-          </li>
-        </ul>
+              <h3>Banking App</h3>
+              <p class="thumb">App</p>
+            </li>
+            <li class="shadow">
+              <div class="cashless-card">
+                <img
+                  src="images/img6.jpg"
+                  alt="Cashless Payment"
+                  class="normal-img"
+                  width="360"
+                  height="300"
+                />
+                <img
+                  src="images/img15.jpg"
+                  alt="Cashless hover"
+                  class="hover-img"
+                  width="360"
+                  height="300"
+                />
+                <div class="overlay-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </div>
+              </div>
+
+              <h3>Cashless Payment</h3>
+              <p>Marketing</p>
+            </li>
+            <li class="shadow">
+              <img
+                src="images/img7.jpg"
+                alt="Meditation App"
+                width="360"
+                height="300"
+              />
+              <h3>Meditation App</h3>
+              <p>App</p>
+            </li>
+            <li class="shadow">
+              <img
+                src="images/img8.jpg"
+                alt="Taxi Service"
+                width="360"
+                height="300"
+              />
+              <h3>Taxi Service</h3>
+              <p>Marketing</p>
+            </li>
+            <li class="shadow">
+              <img
+                src="images/img9.jpg"
+                alt="Screen Illustrations"
+                width="360"
+                height="300"
+              />
+              <h3>Screen Illustrations</h3>
+              <p>Design</p>
+            </li>
+            <li class="shadow">
+              <img
+                src="images/img12.jpg"
+                alt="Online Courses"
+                width="360"
+                height="300"
+              />
+              <h3>Online Courses</h3>
+              <p>Marketing</p>
+            </li>
+          </ul>
         </div>
       </section>
-      
     </main>
     <footer class="back-2">
-     
       <div class="content-4">
         <div class="logo-1">
-        <a href="#" class="logo bottom-logo">
-          <span class="web">WEB</span><span class="studio">STUDIO</span>
-        </a>
+          <a href="#" class="logo bottom-logo">
+            <span class="web">WEB</span><span class="studio">STUDIO</span>
+          </a>
 
-        <p class="content-5">
-          Increase the flow of customers and <br />
-          sales for your business with digital <br />
-          marketing & growth solutions.
-        </p>
+          <p class="content-5">
+            Increase the flow of customers and <br />
+            sales for your business with digital <br />
+            marketing & growth solutions.
+          </p>
         </div>
-        
+
         <div class="footer-right">
-         <p class="footer-right"> Social media</p>
-        <ul class="social-links">
-                  
-                  <li class="social-media">
-                    <a href="#">
-                    <svg class="icon icon-instagram"><use xlink:href="./images/symbol-defs.svg#icon-instagram"></use></svg>
-                    </a>
-                  </li>
-               <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-twitter"><use xlink:href="./images/symbol-defs.svg#icon-twitter"></use></svg>
-                </a>
-              </li>
-              <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-facebook"><use xlink:href="./images/symbol-defs.svg#icon-facebook"></use></svg>
-                </a>
-              </li>
-              <li class="social-media">
-                <a href="#">
-                <svg class="icon icon-linkedin"><use xlink:href="./images/symbol-defs.svg#icon-linkedin"></use></svg>
-                </a>
-              </li>
-                </ul>
+          <p class="footer-right">Social media</p>
+          <ul class="social-links">
+            <li class="social-media">
+              <a href="#">
+                <svg class="icon icon-instagram">
+                  <use
+                    xlink:href="./images/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media">
+              <a href="#">
+                <svg class="icon icon-twitter">
+                  <use xlink:href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media">
+              <a href="#">
+                <svg class="icon icon-facebook">
+                  <use
+                    xlink:href="./images/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media">
+              <a href="#">
+                <svg class="icon icon-linkedin">
+                  <use
+                    xlink:href="./images/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-              
-        <div class="subscribe">
-           <p>Subscribe</p>
-           <form class="subscribe-form">
-            
-            <input type="email" placeholder="E-mail" required>
-            <button type="submit">Subscribe
-              <svg class="icon icon-icon-send"><use xlink:href="./images/symbol-defs.svg#icon-icon-send"></use></svg>
-            </button>
-           </form>
 
+        <div class="subscribe">
+          <p>Subscribe</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="E-mail" required />
+            <button type="submit">
+              Subscribe
+              <svg class="icon icon-icon-send">
+                <use xlink:href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
   </body>
 </html>
-
-
-
