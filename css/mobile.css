@@ -33,7 +33,7 @@ header {
   display: none;
   z-index: 1000;
   padding: 24px;
-  background-color: #f4f4fd;
+  background-color: #ffffff;
 }
 .mobile-menu .title-3 {
   font-style: normal;
@@ -231,6 +231,48 @@ header {
   color: #ffffff;
   margin-top: 100px;
 }
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 264px;
+}
+.subscribe-input {
+  width: 100%;
+  max-width: 300px;
+  height: 44px;
+
+  padding: 8px 16px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: #ffffff;
+  font-size: 14px;
+}
+.subscribe-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-width: 165px;
+  height: 36px;
+
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 .icon-icon-send {
   width: 165px;
   height: 40px;
