@@ -15,17 +15,18 @@ header {
   align-items: flex-start;
   background-color: #ffffff;
   color: #2f2f42;
-  position: relative;
 }
 .icon-Group {
   color: #2f2f37;
   width: 24px;
   height: 24px;
   cursor: pointer;
+  position: relative;
 }
 .burger {
   cursor: pointer;
   position: relative;
+  left: 80px;
 }
 .mobile-menu {
   position: fixed;
@@ -34,10 +35,16 @@ header {
   z-index: 1000;
   padding: 24px;
   background-color: #ffffff;
+  height: 100vh;
 }
 .mobile-menu .title-3 {
   font-style: normal;
   margin-top: 48px;
+  margin-bottom: 200px;
+  padding-top: 200px;
+}
+.social-media {
+  gap: 10px;
 }
 .mobile-menu .title-3 a {
   display: block;
@@ -46,7 +53,10 @@ header {
   line-height: 24px;
   color: #434455;
 }
-
+.mobile-menu {
+  margin-top: auto;
+  padding-bottom: 24px;
+}
 .menu-toggle {
   display: none;
 }
@@ -219,7 +229,7 @@ header {
 .content-4 {
   text-align: center;
   padding-top: 100px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 .footer-right {
   color: #ffffff;
@@ -260,9 +270,9 @@ header {
   justify-content: center;
   gap: 8px;
 
-  min-width: 165px;
-  height: 36px;
-
+  min-width: 140px;
+  height: 40px;
+  padding: 0 12px;
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
@@ -277,7 +287,7 @@ header {
   width: 165px;
   height: 40px;
   background-color: #4d5ae5;
-  display: flexbox;
+  display: flex;
 }
 
 .cashless-card {
@@ -286,10 +296,11 @@ header {
   width: 288px;
   height: 280px;
 }
-.shadow img {
+.part-2 img {
   width: 288px;
   height: 280px;
-  margin-left: 50px;
+  padding-right: 5px;
+  padding-left: 10px;
 }
 .no-bullets-1 h3 {
   margin-left: 50px;
@@ -331,12 +342,20 @@ header {
 .no-bullets-2 li {
   list-style: none;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  padding-top: px;
+}
+.no-bullets-2 ul {
+  margin-bottom: 20px;
 }
 .no-bullets-2 a {
   text-decoration: none;
   font-size: 36px;
+  font-weight: 700;
   color: #2e2f42;
+  top: 72px;
+  left: 16px;
+  gap: 40px;
 }
 
 .icon-Vector-3 {
@@ -358,4 +377,46 @@ header {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+.modal {
+  width: 100px;
+  height: 100px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.contact-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 408px;
+  height: 584px;
+}
+.contact-form h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #2e2f42;
+}
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 14px;
+  margin: 10px 0 5px;
+  color: #8e8f99;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
