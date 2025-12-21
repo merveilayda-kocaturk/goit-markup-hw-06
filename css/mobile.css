@@ -109,9 +109,6 @@ header {
   text-align: left;
 }
 
-.modal-content {
-  visibility: hidden;
-}
 .icon-antenna {
   display: none;
 }
@@ -417,8 +414,8 @@ header {
   cursor: pointer;
 }
 .modal {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   display: none;
   justify-content: center;
   align-items: center;
@@ -435,14 +432,17 @@ header {
 .modal-content {
   position: relative;
 }
+.form-toggle :checked ~ .mobile-menu {
+  display: block;
+}
 
 .contact-form {
   background: #ffffff;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  width: 408px;
-  height: 584px;
+  width: 288px;
+  height: 623px;
 }
 .contact-form h3 {
   font-size: 16px;
