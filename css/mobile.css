@@ -582,3 +582,17 @@ input:focus {
     margin: 24px auto 0;
   }
 }
+@media screen and (min-width: 1158px) {
+  .modal-content {
+    width: 528px;
+  }
+
+  .contact-form {
+    padding: 24px;
+  }
+
+  .modal-send-btn {
+    width: calc(100% - 96px);
+    margin: 32px auto 0;
+  }
+}
