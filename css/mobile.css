@@ -568,7 +568,7 @@ input:focus {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .modal-content {
     width: 408px;
   }
@@ -582,9 +582,10 @@ input:focus {
     margin: 24px auto 0;
   }
 }
-@media screen and (min-width: 1158px) {
+@media (min-width: 1158px) {
   .modal-content {
-    width: 528px;
+    width: 4408px;
+    height: 584px;
   }
 
   .contact-form {
@@ -594,5 +595,12 @@ input:focus {
   .modal-send-btn {
     width: calc(100% - 96px);
     margin: 32px auto 0;
+  }
+
+  .no-bullets-2 {
+    display: flex;
+  }
+  .title-3 a {
+    display: flex;
   }
 }
