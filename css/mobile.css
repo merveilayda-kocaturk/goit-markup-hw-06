@@ -563,17 +563,57 @@ input:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px) {
+  .no-bullets-2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .no-bullets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 72px 24px;
+  }
+  .no-bullets-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 72px 24px;
+  }
+  .content-4 {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+    gap: 72px 24px;
+    text-align: left;
+  }
+  .logo-1 {
+    width: 264px;
+  }
+  .footer-right {
+    width: 208px;
+  }
+  .subscribe {
+    width: 100%;
+  }
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .subscribe-input {
+    width: 264px;
+    height: 40px;
+  }
+  .subscribe-btn {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
   .modal-content {
     width: 408px;
-  }
-
-  .contact-form {
-    padding: 24px;
-  }
-
-  .modal-send-btn {
-    width: calc(100% - 48px);
-    margin: 24px auto 0;
+    height: 584px;
   }
 }
 @media (min-width: 1158px) {
@@ -583,6 +623,10 @@ input:focus {
 
   .no-bullets-2 {
     display: flex;
+    justify-content: space-between;
+    max-width: 1158px;
+    margin: 0 auto;
+    gap: 60px;
   }
   .title-3 a {
     display: flex;
@@ -646,6 +690,7 @@ input:focus {
     top: 1248px;
     justify-content: center;
     text-align: center;
+    visibility: visible;
   }
   .modal-content {
     width: 408px;
@@ -653,5 +698,52 @@ input:focus {
   }
   .contact-form {
     padding: 24px;
+  }
+  .icon-antenna {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f4f4fd;
+  }
+  .icon-clock {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f4f4fd;
+  }
+
+  .icon-diagram {
+    display: flex;
+
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f4f4fd;
+  }
+  .icon-astronaut {
+    display: flex;
+
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f4f4fd;
   }
 }
