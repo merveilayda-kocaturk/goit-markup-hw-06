@@ -562,6 +562,9 @@ input:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
   .footer-right p {
     margin-top: 0;
     padding-bottom: 16px;
@@ -583,15 +586,18 @@ input:focus {
   }
   .content-4 {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 
+    flex-wrap: wrap;
+    padding-left: 108;
     align-items: flex-start;
     gap: 72px 24px;
     text-align: left;
   }
   .logo-1 {
     width: 264px;
+  }
+  .content-5 {
+    margin-top: 12px;
   }
 
   .subscribe {
@@ -605,10 +611,13 @@ input:focus {
     flex-direction: row;
     gap: 24px;
     align-items: center;
+    margin: 0;
+    padding-top: 16px;
   }
   .subscribe-input {
     width: 264px;
     height: 40px;
+    margin-top: 0;
   }
   .subscribe-btn {
     height: 40px;
